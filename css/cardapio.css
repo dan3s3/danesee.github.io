@@ -1,0 +1,220 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+  *, p, h1, h2, h3, h4, h5, h6, ul, ol, li, img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    font-family: 'Cardo', serif;
+  }
+  p {
+    line-height: 24px;
+  }
+  img {
+    max-width: 100%;
+  }
+  #fone {
+    margin-top: .25em;
+    margin-bottom: 3px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  #ifood {
+    max-width: 60px;
+    margin: 10px;
+  }
+  #uber {
+    max-width: 35px;
+    margin: 10px;
+  }
+
+  /* Mobile first */
+  .we-are-open {
+    padding-top: 0.25em;
+    height: 2rem;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .header-container {
+    display: block;
+    max-height: 650px;
+  }
+  .header-item {
+    flex: 0 0 100%;
+  }
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;        
+    justify-content: center;
+  }
+  .logo-item {
+    display: block;
+    max-width: 100px; 
+    margin-top: 20px;
+  }
+  .note-container {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .note-item {
+    display: block;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 1em;
+    line-height:1.5em;
+    border: solid 5px hsla(0, 95%, 35%, 1);
+    background:hsla(67, 95%, 95%, 1);
+    text-align: center;
+    margin-top: 5px;
+  }
+  .note-pane:first-child {
+    border-radius: 255px 15px 225px 1px/15px 225px 15px 255px;
+    border-bottom:solid 2px hsla(0, 95%, 35%, 1);
+    padding-bottom: 10px;;
+  }
+  .note-pane:last-child {
+    padding-top: 10px;;
+  }
+  .row {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .menu-wrapper-inner {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 1em;
+  }
+
+  /*Desktop screens */
+  @media (min-width: 600px) {
+    .we-are-open {
+      padding-top: 0.25em;
+      height: 2rem;
+      background-color: darkred;
+      color: white;
+      text-align: center;
+      font-size: medium;
+    }    
+    .header-container {
+      display: flex;
+      max-height: 350px;
+    }
+    .header-item {
+      flex: 0 0 calc(100%/3);
+    }
+    .logo-container {
+      display: flex;
+      width: 100%;
+      height: 100%;        
+      justify-content: center;
+    }
+    .logo-item {
+      display: inline-block;
+      max-width: 150px; 
+      margin-top: 20px;
+    }
+    .note-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .note-item {
+      display: inline-block;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      padding: 1em;
+      line-height:1.5em;
+      border: solid 5px hsla(0, 95%, 35%, 1);
+      background:hsla(67, 95%, 95%, 1);
+      text-align: center;
+      margin-top: 5px;
+    }
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+   .menu-wrapper-inner {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 1.5em;
+    }
+    .menu-wrapper-inner:first-child {
+    padding-right: 3em;
+    } 
+  }
+
+/* Overall settings */
+  .category-text {
+    text-align: center;
+    margin: 30px 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Paytone One', sans-serif;
+  } 
+  .sub-category-text {
+    margin: 1em 1em 1em 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Paytone One', sans-serif;
+}
+  .menu-item {
+    position: relative;
+    padding-bottom: 11px;
+    border-bottom: 1px dashed #dbdbdb;
+    margin-bottom: 20px;
+  }
+  .menu-item-title {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+  }
+  .tag {
+    display: inline-block;
+    border-radius: 0.6em;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px; 
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 0.7em;
+    font-weight: lighter;
+   }
+   .recomendamos {
+    background-color: #c7a254;
+    color: #ffffff;
+   }
+   .especialidade {
+    background-color: #a30d33e3;
+    color: #ffffff;
+   }
+   .vegano {
+    background-color: #479470;
+    color: #ffffff;
+   }
+   .vegetariano {
+    background-color: #9aaa50;
+    color: #ffffff;
+   }
+  .menu-item-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    min-width: 50px;
+    text-align: right;
+    font-family: 'Acme', sans-serif;
+    font-weight: lighter;
+  }
+  .menu-item-desc {
+    margin-bottom: 0;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+  }  

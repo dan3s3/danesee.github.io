@@ -8,7 +8,7 @@
   body {
     margin: 0;
     font-family: 'Cardo', serif;
-    background: url("../images/background.png");
+    background: url('../images/background.png');
   }
   p {
     line-height: 24px;

@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurante You Yi - Autêntica Cozinha Chinesa</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="./assets/images/logo-small.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Noto+Serif+SC:wght@200;500;900&family=Source+Code+Pro:wght@200&family=Voltaire&display=swap" rel="stylesheet"> 
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script> 
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#"><div id="nu-logo"></div></a></li>
+                <li class="item" id="m1"><a href="#">História</a></li>
+                <li class="item" id="m2"><a href="#">Cardápio</a></li>
+                <li class="item" id="m3"><a href="#">Mooncakes</a></li>
+                <li class="item" id="m4"><a href="#">Contato</a></li>
+                <li class="item button"><a href="#" id="lang-pt">PT</a><span class="letter-spacer">|</span><a href="#" id="lang-en">EN</a><span class="letter-spacer">|</span><a href="#" id="lang-mand">中文</a></li>
+                <li class="item button secondary" id="m5"><a href="#">Peça Agora!</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero"></div>
+
+<!-- INTRO SECTION -->
+    <!-- Skyline Sub-section -->
+    <section class="skyline">
+        <h1>Uma viagem aos sabores da China</h1>
+    </section>
+    
+    <!-- Welcome Sub-section -->
+    <section class="welcome-section">
+        <img src="./assets/images/fachada.jpg" id="fachada-pic">
+        <h2>Desde 1991</h2>
+        <h3>Bem vindos ao You Yi</h3>
+        <p>Lorem ipsum rad vicinum rex tremendae vax pax Roman sid tinatium gant tref mid summer ab domine dae fig ritmium opus dem latter laster fac Roman sid tinatium gant tref mid summer ab domine dae fig ritmium opus dem latter laster fac</p>
+        <a href="#">Explorar</a>
+        <div class="triangle"></div>
+    </section>
+    
+<!-- MAIN SECTION: MOONCAKES -->    
+    <main>
+        <img src="./assets/images/mooncake-1.jpg" id="mooncake-pic-1">
+        <h2>Mooncakes</h2>
+        <img src="./assets/images/moon-2.png" id="the-moon">
+        <p>Venha conhecer esta delícia Lorem ipsum lorem up sit nav ausjdh asijd  sei do opus domus obrus ipsus implus ddenim rat irae rex tremendae confutatis maledictus.</p>
+        <a href="#">Explorar</a>
+        <img src="./assets/images/mooncake-2.jpg" id="mooncake-pic-2">
+        <div class="circle"></div>
+    </main>
+
+<!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-l1-container">
+            <div class="footer-l1">
+                <h4>Nos Siga nas Redes</h4>
+                <ul class="medias">
+                    <li><a href="#"><img src="./assets/images/insta02.svg"></a></li>
+                    <li><a href="#"><img src="./assets/images/face3.png"></a></li>
+                </ul>
+            </div>
+            <div class="footer-l1">
+                <h4>Restaurante You Yi</h4>
+                <address>
+                    <span>Rua Cândido Silveira, 242 - Auxiliadora<br>
+                        Porto Alegre/RS<br>
+                        <a href="tel:51-3342-3828">(51) 3342-3828</a><br>
+                        <a href="tel:51-99999-9999">(51) 99999-9999</a></span>
+                </address>
+            </div>
+            <div class="footer-l1">
+                <h4>Autêntica Cozinha Chinesa desde 1991</h4>
+                <ul>
+                    <li>Premio Veja 2008</li>
+                    <li>Premio Veja 2006</li>
+                    <li>Premio Veja 2007</li>
+                    <li>Premio Veja 2007</li>
+                    <li>Premio Veja 2007</li>
+                    <li>Premio Veja 2007</li>
+                    <li>Premio Veja 2007</li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-l4-container">
+            <div class="footer-l4">
+                <h4 id="hours">Horário de Funcionamento Tele e Mesas</h4>
+                <span>Seg à Sex: das <time>11:00</time> às <time>14:00</time> e das <time>18:00</time> às <time>23:00</time><br>
+                    Sáb e Dom: das <time>11:00</time> às <time>15:00</time> e das <time>18:00</time> às <time>23:00</time></span>
+            </div>
+        </section>
+        <section class="footer-l2-container">
+            <div class="footer-l2">
+                <span><a href="#">Política e Termos de uso</a></span>
+            </div>
+            <div class="footer-l2" id="copyright">
+                <span>Copyright © 2020 - Todos os direitos reservados</span>
+            </div>
+        </section>
+        <div class="footer-l3">
+            <span>Criado com ❤️ em POA + Shanghai<br>
+                  por<br>
+                  <a href="https://www.linkedin.com/in/danielfloresdacunha/" target="_blank">Daniel Flores</a></span>
+        </div>
+    </footer>
+
+    <script src="./scripts/scripts.js"></script>
+    </body>
+</html>
